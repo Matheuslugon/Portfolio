@@ -1,41 +1,323 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icon16px.png"/>
-    <script src="https://kit.fontawesome.com/241d540593.js" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <title>Matheus Lugon - Web Developer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/logo/icon16px.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <title>Matheus Lugon - Web Developer</title>
 </head>
+
 <body>
-    <h1>Matheus Nowaski Lugon</h1>
-    <div class=ftperfil>
-        <img src="img/ftperfil.png" alt="Matheus Nowaski Lugon">
+      <!--Section Topo-->
+  <header class="fixed-top">
+    <div class="container-md d-flex justify-content-between align-items-center">
+
+      <ul class="menu-links d-none d-md-flex navbar-nav flex-row gap-4 align-items-center c-white">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">INÍCIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">SOBRE MIM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">TRABALHOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONECTE-SE</a>
+        </li>
+        </li>
+      </ul>
+
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand button-style c-white" href="#">
+           ENTRE EM CONTATO
+          </a>
+        </div>
+      </nav>
+
+      <!--Icon menu mobile  -->
+      <button class="menu-icon d-flex align-items-center justify-content-center fs-3 d-md-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-    <div class="intro">
-        <h2>Quem sou eu</h2>
-            <p> Curioso e antenado nas novas tecnologias, em 2022 decidi o que realmente quero para minha jornada profissional: Ser um programador.  Após alguns anos inserido no mercado de trabalho como jovem aprendiz, o qual me proporcionou um grande aprendizado no trabalho em grupo, maturidade para lidar com estresse cotidiano e, sem dúvidas, aprender ainda muito novo a lidar com o desgaste emocional no mundo trabalhista.
-            Com os meus amigos, que são HTML e CSS para marcações e estilizações das telas, pude com esse suporte entender o caminho a ser seguido, os livros para serem estudados e, também, cursos disponíveis nas redes sociais que poderiam me alavancar na minha carreira profissional.
-            Com as devidas ferramentas em mãos e um plano de estudo direcionado, designei todo o tempo que tinha para focar o meu desenvolvimento como programador e, consequentemente, pude adquirir, através do <a href="https://www.cursoemvideo.com/" target="_blank" rel="external"><strong>Curso em video</strong></a> habilidades de git e github para o melhor versionamento do meu código,  atribuindo assim um melhor desenvolvimento no trabalho em equipe. Além disso adquiri uma noção básica de PhP para ser mais eficiente nas interações com o  banco de dados que foi o meu projeto final logo no primerio periodo da faculdade.
-            Sigo, de forma constante, em busca por conhecimento nesse novo ramo e hoje estou me desenvolvendo na linguagem Javascriptpara melhorar minhas estilizações e animação dos sites.
-            </p>
-        
-            <p>Para baixar meu Curriculo em pdf <a href="img/Matheus Lugon - currículo.pdf" target="_blank" download="Matheus Lugon - currículo.pdf" type="application/pdf" ><strong> clique aqui.</strong></a></p> 
-    </div>
+      <!--Conteudo menu mobile-->
+    <div class="offcanvas offcanvas-end bg-body menu-responsivo body-menu-mobile" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
 
-    <div class="social">
-    <h2>Gostaria de entrar em contato? Minhas redes então aqui embaixo!</h2>
-        <ul type="_blank">
-            <li><a href="https://wa.me/5521986028193" target="_blank" rel="author"><i class="fa-brands fa-square-whatsapp"></i></i></a></li>
+      <div class="offcanvas-header logo-mobile">
+        <h5 class="offcanvas-title"
+         id="offcanvasNavbarLabel"><img src="img/conteudo/matheus_pp_.ico" alt="Matheus Lugon - Desenvolvedor Web">
+        </h5>
 
-            <li><a href="https://www.linkedin.com/in/matheus-lugon-7b7b901b6/" target="_blank" rel="author"><i class="fa-brands fa-linkedin"></i></a></li>
+        <button type="button" class="btn-close c-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
-            <li><a href="https://github.com/Matheuslugon" target="_blank" rel="author"><i class="fa-brands fa-square-github"></i></a></li>
+      <div class="offcanvas-body">
+        <ul class="menu-links menu-mobile d-flex navbar-nav c gap-4 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link c-white" href="#home">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c-white" href="#about">SOBRE MIM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c-white" href="#team">TRABALHOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c-white" href="#contact">CONECTE-SE</a>
+          </li>
+          </li>
         </ul>
+      </div>
     </div>
+  </header>
+      <!-- Conteudo para o site -->
+  <main>
+      <!--Section Inicio-->
+    <section id="home" class="banner-home">
+      <div class="master-home d-flex flex-column justify-content-center">
+        <div class="text-home d-flex flex-column justify-content-center gap-4">
+          <h1>
+            <strong>
+              &lt;
+            </strong>
+            Oi, <br> prazer em recebê-lo aqui
+            <strong>
+              &gt;
+            </strong>
+          </h1>
+          <p>
+            Me chamo Matheus Nowaski, <br> desenvolvedor e viciado em aprender sempre mais.
+          </p>
+          <div class="button-style d-flex text-center justify-content-center align-items-center" id="button-home">
+            <a href="#">
+              VEM COMIGO, QUERO TE MOSTRAR UMA COISA
+            </a>
+          </div>
+        </div>
+        <div class="img-home d-none
+         justify-content-center">
+          <img src="img/conteudo/matheus_eu.gif" alt="Matheus Lugon - Web Developer">
+        </div>
+      </div>
 
+    </section>
+    <section id="about">
+      <!--Section Sobre-->
+      <div class="master-about d-flex flex-column">
+          <div 
+            class="text-about d-flex flex-column justify-content-center gap-4">
+            
+              <div class="img-dev d-flex justify-content-center">
+                <img src="img/conteudo/HTML.svg" alt="HTML">
+                <img class="css" src="img/conteudo/CSS.svg" alt="CSS">
+                <img src="img/conteudo/BOOT.svg" alt="bootstrap">
+              </div> 
+            
+              <div class="img-about-mobile d-flex justify-content-center">
+                <img src="img/conteudo/eu_pp.png" alt="">
+              </div>  
+
+            <h1>
+              Deixa eu me apresentar...
+            </h1>
+            <p>
+              Meu nome é Matheus Nowaski, tenho 23 anos e sou residente do Rio de Janerio.
+            </p>
+            <p>
+              Sou graduando em Análise e Desenvolvimento de Sistemas. Atualmente, estou focado em desenvolvimento de sistema para web. 
+            </p>
+            <p>
+              Me qualifico desenvolvedor Júnior.
+            </p>
+
+            <div class="list-social">
+              <ul class="d-flex">
+                <li>
+                  <a href="#">
+                    <img src="img/logo/instagram.png" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/logo/facebook.png" alt="facebook">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/logo/linkedin.png" alt="linkedin">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/logo/github.png" alt="github">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/logo/mail.png" alt="mail">
+                  </a>
+                </li>
+                <li>
+                  <div class="button-port text-center">
+                    <a href="#">
+                      PORTIFÓLIO
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>    
+          </div> 
+          <div class="img-about d-flex justify-content-center">
+            <img src="img/conteudo/eu_pp.png" alt="">
+          </div>
+    </section>
+    <section id="team">
+      <!--Section Portifólio-->
+        <h2>
+          Meu portifolio
+        </h2>
+      <div class="master-port d-flex align-items-center flex-column">
+        <div class="d-flex flex-column align-items-center">
+          <div class="imgs-port d-flex gap-4" id="image-port">
+            <a href="">
+              <img src="img/conteudo/Link ⏵ bella_ray.png (2).png" alt="">
+            </a>
+
+            <a href="">
+              <img src="img/conteudo/Link ⏵ bella_ray.png (2).png" alt="">
+            </a>
+          </div>
+          <div class="imgs-port d-flex gap-4">
+            <a href="">
+              <img src="img/conteudo/Link ⏵ bella_ray.png (2).png" alt="">
+            </a>
+
+            <a href="">
+              <img src="img/conteudo/Link ⏵ bella_ray.png (2).png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="img-port d-flex">
+          <img src="img/conteudo/HTML.gif" alt="Matheus Lugon - Web Developer">
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </section>
+      <!--Section Contato-->
+      <div class="banner d-flex align-items-center">
+        <img src="img/conteudo/divisoria.svg" alt="">
+      </div>
+    <section id="contact" class="bd-color">
+      <div class="master-contact d-flex flex-column justify-content-center align-items-center">
+
+        <div class="img-contact d-flex justify-content-center">
+          <img src="img/conteudo/img_web.gif" alt="">
+         </div>
+
+        <div class="text-contact d-flex flex-column justify-content-center align-items-center">
+          <h1>
+            <strong>
+              Orçamentos, propostas dúvidas e sugestões:
+            </strong>
+          </h1>
+
+          <p>
+            Para saber mais, deixe seu e-mail:
+          </p>
+
+          <input type="text" placeholder="Insira seu e-mail...">
+
+          <div class="d-flex button-enviar">
+            <a href="#contact">
+              <span>
+                <strong>
+                  ENVIAR
+                </strong>
+              </span>
+            </a>
+          </div>
+        </div>
+     </div>
+
+
+    </section>
+  </main>
+<!--Section rodapé-->
+
+<!--
+  <footer>
+    <ul class="footer-menu d-flex justify-content-center gap-4">
+      <li>
+        HOME
+      </li>
+      <li>
+        SOBRE MIM
+      </li>
+      <li>
+        PORTIFÓLIO
+      </li>
+      <li>
+        CONTATO
+      </li>
+      <li>
+        <i class="fa-regular fa-copyright"></i>
+        2023 Lugon
+      </li>
+    </ul>
+  </footer>-->
 </body>
-</html>
 
+<script src="https://kit.fontawesome.com/241d540593.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script>
+  // Resgata todos os links do menu
+  const links = document.querySelectorAll('.menu-mobile li a');
+
+  // Inicia o a API do Offcanvas
+  const bsOffcanvas = new bootstrap.Offcanvas('#offcanvasNavbar')
+
+  for (var i = 0; i < links.length; i++) {
+    // A cada item no loop, adicionamos um addEventListener
+    // docs: https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+
+    links[i].addEventListener("click", (event) => {
+
+      // Resgatamos o valor do href
+      window.location = event.target.href;
+
+      // Existe um problema de conflito entre fechar o modal e completar o scroll.
+      // Foi adicionado um timeout para aguardar a animação do scroll e logo após fechar o menu
+      // docs: https://www.w3schools.com/jsref/met_win_settimeout.asp
+      setTimeout(() => bsOffcanvas.hide(), 350)
+    },
+      false);
+  }
+</script>
+
+</html>
