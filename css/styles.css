@@ -151,6 +151,7 @@ section p {
   width: 95%;
 }
 
+
 /* Config da section about*/
 
 .img-about img{
@@ -223,6 +224,17 @@ section p {
 
 .img-port img{
   width:100%;
+}
+
+.imgs-port a img{
+  transition: 250ms linear; 
+
+}
+
+.imgs-port a img:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 8px 0px #40798C;
+
 }
 
 
@@ -457,5 +469,8 @@ footer{
     width: 180px;
     margin-top: -25px;
 }
+  .list-social{
+    width: 85%;
+  }
 
 }
